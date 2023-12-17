@@ -8,12 +8,12 @@ const Menu = () => {
   const [currentField, setCurrentField] = useState("All");
 
   function setField(event) {
-    console.log(event.target.id);
+    // console.log(event.target.id);
 
     setUpdatedData(
       data.filter((item) => {
-        if (event.target.id === "all") return item;
-        return item.category === event.target.id;
+        if (event === "all") return item;
+        return item.category === event;
       })
     );
   }
@@ -31,16 +31,16 @@ const Menu = () => {
         }}
       ></div>
       <ul>
-        <li id="all" onClick={() => setField(event)}>
+        <li id="main" onClick={() => setField("all")}>
           All
         </li>
-        <li id="breakfast" onClick={() => setField(event)}>
+        <li id="filter-btn-1" onClick={() => setField("breakfast")}>
           Breakfast
         </li>
-        <li id="lunch" onClick={() => setField(event)}>
+        <li id="filter-btn-2" onClick={() => setField("lunch")}>
           Lunch
         </li>
-        <li id="shakes" onClick={() => setField(event)}>
+        <li id="filter-btn-3" onClick={() => setField("shakes")}>
           Shakes
         </li>
       </ul>

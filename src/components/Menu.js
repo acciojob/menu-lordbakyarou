@@ -34,13 +34,25 @@ const Menu = () => {
         <li id="main" onClick={() => setField("all")}>
           All
         </li>
-        <li id="filter-btn-1" onClick={() => setField("breakfast")}>
+        <li
+          id="filter-btn-1"
+          data-test-id="menu-item-breakfast"
+          onClick={() => setField("breakfast")}
+        >
           Breakfast
         </li>
-        <li id="filter-btn-2" onClick={() => setField("lunch")}>
+        <li
+          id="filter-btn-2"
+          data-test-id="menu-item-lunch"
+          onClick={() => setField("lunch")}
+        >
           Lunch
         </li>
-        <li id="filter-btn-3" onClick={() => setField("shakes")}>
+        <li
+          id="filter-btn-3"
+          data-test-id="menu-item-shakes"
+          onClick={() => setField("shakes")}
+        >
           Shakes
         </li>
       </ul>

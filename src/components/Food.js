@@ -3,7 +3,7 @@ import React from "react";
 import "../styles/App.css";
 
 const Food = ({ data, currentField }) => {
-  const testId = `menu-items-${currentField}`;
+  const testId = `menu-item-${currentField}`;
   return (
     <div className="menu-items">
       {data.map((item) => {

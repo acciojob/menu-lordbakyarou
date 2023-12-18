@@ -37,7 +37,7 @@ button {
 .menu {
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  padding: 50px;
 }
 
 .menu-items {
@@ -45,11 +45,11 @@ button {
   /* flex-direction: column; */
   gap: 100px;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-evenly; */
 }
 
 .item {
-  width: 45vw;
+  width: 40vw;
   height: 200px;
   /* overflow: hidden; */
   display: flex;
@@ -71,6 +71,8 @@ button {
   display: flex;
   flex-direction: column;
   /* align-items: ; */
+  box-sizing: content-box;
+  padding-left: 10px;
 }
 
 .item-header {
@@ -88,6 +90,6 @@ button {
 }
 
 .item-description h1 {
-  font-size: 9px;
+  font-size: 12px;
   color: grey;
 }

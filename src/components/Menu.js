@@ -16,6 +16,8 @@ const Menu = () => {
         return item.category === event;
       })
     );
+
+    setCurrentField(event);
   }
 
   return (
@@ -57,7 +59,7 @@ const Menu = () => {
         </li>
       </ul>
       <div className="menu">
-        <Food data={updatedData} />
+        <Food data={updatedData} currentField={currentField} />
       </div>
     </div>
   );
